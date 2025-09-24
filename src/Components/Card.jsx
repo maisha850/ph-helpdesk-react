@@ -4,10 +4,10 @@ const Card = ({issue, data, setData}) => {
    const handleClick=()=>{
      const currentData=data.find(element=>element.ticketId ===issue.ticketId)
     if(currentData.status==='Pending'){
-        currentData.status==='Submitted'
+        currentData.status='Submitted'
     }
     else if(currentData.status==='Submitted'){
-         currentData.status==='Reviewed'
+         currentData.status='Reviewed'
     }
     const restdata=data.filter(ele=>ele.ticketId!==issue.ticketId)
     setData([currentData,...restdata])
