@@ -3,7 +3,7 @@ import Container from "./Container";
 
 
 const Btn = ({toggle,setToggle}) => {
-    const btns=['All', 'Pendings','Submitted','Reviewed']
+    const btns=['All', 'Pending','Submitted','Reviewed']
     return (
         <div>
             <Container>
